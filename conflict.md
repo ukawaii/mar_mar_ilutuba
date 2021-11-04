@@ -1,4 +1,2 @@
-Konflikti tekitamiseks tekita konflikt
 Auhauh
 Konflikti tekitamiseks tekita konflikt jamidagi muud
-0ed15b9fe12d627825ab5760c037f8a4b390f623
