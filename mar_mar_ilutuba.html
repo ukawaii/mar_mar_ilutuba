@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Marie ilutuba</title>
+    <script>
+        function initMap() {
+          // The location of Ilutuba
+          const ilutuba = { lat: 58.38513844294078, lng: 26.729199886495767 };
+          // The map, centered at Ilutuba
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: ilutuba,
+          });
+          // The marker, positioned at Ilutuba
+          const marker = new google.maps.Marker({
+            position: ilutuba,
+            map: map,
+          });
+        }
+      </script>
+</head>
+<body>
+    <div>
+        <h1>Marie ilutuba</h1>
+    </div>
+    <div class=nav>
+        <ul>
+            <li><a class="hinnakiri" href="hinnakiri.html">Hinnakiri</a></li>
+            <li><p id="broneeriaeg">Broneeri aeg</p></li>
+            <li></li>
+            <li><img src="icons/instagram.png" alt="Instagram"></li>
+            <li><img  src="icons/facebook.png" alt="Facebook"></li>
+            <li><img src="icons/tumblr.png" alt="Tumblr"></li>
+
+        </ul>
+    </div>
+    <div class="slider-holder">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+        <div class="image-holder">
+            <img src="icons/juuksed.jpeg" class="slider-image" />
+            <img src="icons/kyyned.jpeg" class="slider-image" />
+            <img src="icons/happy.jpeg" class="slider-image" />
+        </div>
+        <div class="button-holder">
+            <a href="#slider-image-1" class="slider-change"></a>
+            <a href="#slider-image-2" class="slider-change"></a>
+            <a href="#slider-image-3" class="slider-change"></a>
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNoiSOSNaz7kVDXjJDffAgSBzg7BDp1AA&callback=initMap&libraries=&v=weekly"
+      async>
+    </script>
+</body>
+</html>
